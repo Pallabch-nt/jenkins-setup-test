@@ -7,6 +7,6 @@ public class TestCalculator {
     @Test
     public void GivenTwoIntegersAddReturnsAddition() {
         System.out.println("TEST CLASS");
-        assertEquals(4, Calculator.add(2,2));
+        assertEquals(5, Calculator.add(2,2));
     }
 }
