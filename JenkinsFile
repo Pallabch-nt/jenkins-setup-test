@@ -12,4 +12,10 @@ pipeline {
         }
         }
     }
+    post {
+            always {
+                emailext body: 'Body of Test', subject: 'Test', to: 'pallab.netapp.test@gmail.com'
+            }
+        }
+
 }
