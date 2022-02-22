@@ -1,11 +1,15 @@
 pipeline {
     agent any
-
     stages {
-        stage('Hello') {
+        stage('Build') {
             steps {
-                echo 'Hello World'
+                bat './gradlew build'
             }
+        }
+        stage('Test') {
+        steps{
+        echo 'TESTING STAGE'
+        }
         }
     }
 }
